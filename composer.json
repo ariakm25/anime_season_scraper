@@ -1,0 +1,19 @@
+{
+    "name": "ariakm25/simple-php-starter",
+    "description": "PHP Starter Boilerplate",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Aria",
+            "email": "ariakm25@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {
+        "bramus/router": "^1.6"
+    }
+}

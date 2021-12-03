@@ -1,0 +1,14 @@
+RewriteEngine On
+RewriteBase /
+
+# Allow any files or directories that exist to be displayed directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ index.php?$1 [QSA,L]
+
+#
+# Nginx Rewrite rule:
+#
+# try_files $uri $uri/ /index.php?$args;
+#

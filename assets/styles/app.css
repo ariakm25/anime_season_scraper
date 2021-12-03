@@ -1,0 +1,93 @@
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.title, .type-title {
+  text-align: center;
+  display: block;
+}
+
+.item-wrapper {
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 64px;
+}
+
+.item {
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14),
+    0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14),
+    0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item .genres {
+  color: #fff;
+  margin: 10px 0
+}
+
+.item .info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  float: left;
+  padding: 20px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(0, 0, 0, 0.3) 20%,
+    rgba(0, 0, 0, 0.6)
+  );
+  background-repeat: repeat-x;
+}
+
+.item .info a {
+  color: #fff;
+}
+
+.item .info a:hover {
+  color: #f76c82;
+}
+
+.item .info h2 {
+  overflow: hidden;
+  display: block;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.item .info .meta {
+  font-size: 0.8rem;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.item .info .meta span.star {
+  font-size: 0.8rem;
+  color: #ed8a19;
+  width: 15px;
+  height: 15px;
+  line-height: 1.5;
+  margin-right: 5px;
+}
