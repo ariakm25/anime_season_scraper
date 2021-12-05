@@ -8,7 +8,7 @@ class MALService
 {
     private $baseTarget = 'https://myanimelist.net';
 
-    public function init($path)
+    private function init($path)
     {
         $curl = curl_init($this->baseTarget . $path);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE);
